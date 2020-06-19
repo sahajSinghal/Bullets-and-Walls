@@ -33,6 +33,8 @@ function draw() {
     //making the bullet stop
     bullet.velocityX = 0;
 
+    bullet.x = wall.x - wall.width/2 - bullet.width/2;
+
     //calculating danage according to the formula provided
     var damage = 0.5 * (weight * speed * speed)/(thickness * thickness * thickness);
 
